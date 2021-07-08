@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="10dp"
+    tools:context=".register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify your phone number"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp will send you an SMS to verify your phone number.What's my number?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_margin="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:ccp_textSize="16sp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"
+
+
+            />
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:maxLength="9"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/phonenumber"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90pt"
+        android:background="#24D62B"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+
+        />
+
+
+
+</LinearLayout>

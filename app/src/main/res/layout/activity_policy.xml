@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".policy">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/what"
+        android:layout_marginTop="150dp"
+        >
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="607dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="50dp"
+
+            android:text="Please Read Our "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="607dp"
+            android:layout_marginBottom="100dp"
+
+            android:text="Privacy Policy"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="10sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="607dp"
+            android:layout_marginBottom="100dp"
+
+            android:text=", Tap Agree and Continue to accept the"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="617dp"
+        android:layout_marginBottom="80dp"
+
+        android:text="terms of our services"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="10sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="#03DA4B"
+
+
+        android:text="Agree And Continue"
+        android:textColor="@color/white" />
+</RelativeLayout>
